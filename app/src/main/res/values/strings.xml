@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Prototype</string>
+    <string name="headerDescr">header image</string>
+    <string name="btnHelp">Jeg trenger hjelp!</string>
+    <string name="mapTitle">Hjelpen er på vei til din lokasjon!</string>
+    <string name="txtDisclaimer">Ved å trykke på knappen godtar du til alle vilkårene satt av
+        bla a bla blabalbdlawkndkawldkmawldkmawldkmalwkmdlakwmdlakwmdlkawmdlkawmdlk
+        mawldkmawldkmawld kmlakwmdlkawmdlkawmdawlkdmalkwmdlawkmdak</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
