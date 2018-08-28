@@ -12,7 +12,7 @@
         android:layout_height="102dp"
         android:background="@drawable/rounded_button"
         android:drawableTop="@android:drawable/stat_sys_warning"
-        android:onClick="openMapView"
+        android:onClick="openGetHelp"
         android:paddingTop="20dp"
         android:text="@string/btnHelp"
         android:textColor="#fff"
@@ -38,11 +38,13 @@
         app:layout_constraintTop_toBottomOf="@+id/button2"
         app:layout_constraintVertical_bias="0.223" />
 
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView"
-        android:layout_width="177dp"
-        android:layout_height="150dp"
-        tools:layout_editor_absoluteX="191dp"
-        tools:layout_editor_absoluteY="16dp" />
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        tools:context=".MainActivity" />
 
 </android.support.constraint.ConstraintLayout>
