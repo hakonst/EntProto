@@ -1,5 +1,6 @@
 package com.hakon.stensheim.entprototype;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -28,13 +29,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     public void openGetHelp(View view) {
-
+        Intent intent = new Intent(this, HelpActivity.class);
+        startActivity(intent);
     }
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
 
         double latitude = Double.valueOf("59.9139");
         double longitude = Double.valueOf("10.7522");
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         CameraUpdate center=
                 CameraUpdateFactory.newLatLng(new LatLng(59.9139,
                         10.7522));
-        CameraUpdate zoom= CameraUpdateFactory.zoomTo(13);
+        CameraUpdate zoom = CameraUpdateFactory.zoomTo(13);
 
         mMap.moveCamera(center);
         mMap.animateCamera(zoom);
